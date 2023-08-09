@@ -10,7 +10,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
 
-class LoginActivity : AppCompatActivity() {
+class LoginSignUpActivity : AppCompatActivity() {
     private var tabLayout: TabLayout? = null
     private var viewPager2: ViewPager2? = null
     private var adapter: SignInSignupViewPagerAdapter? = null
@@ -23,9 +23,11 @@ class LoginActivity : AppCompatActivity() {
         tabLayout!!.addTab(tabLayout!!.newTab().setText("Login"));
         tabLayout!!.addTab(tabLayout!!.newTab().setText("Signup"));
 
+        tabLayout!!.setSelectedTabIndicator(0)
+
         val fragmentManager: FragmentManager = supportFragmentManager
 //        val fragmentManager: FragmentActivity? = null
-        adapter = SignInSignupViewPagerAdapter(fragmentManager,lifecycle)
+        adapter = SignInSignupViewPagerAdapter(fragmentManager, lifecycle)
         viewPager2!!.setAdapter(adapter)
 //
         tabLayout!!.addOnTabSelectedListener(object : OnTabSelectedListener {

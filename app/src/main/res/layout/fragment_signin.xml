@@ -24,6 +24,7 @@
                 android:layout_height="200dp"
                 android:src="@drawable/oboarding1" />
 
+
             <EditText
                 android:id="@+id/login_email"
                 android:layout_width="300dp"
