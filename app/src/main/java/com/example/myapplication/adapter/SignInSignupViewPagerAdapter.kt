@@ -4,8 +4,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.myapplication.SignInFragment
-import com.example.myapplication.SignUpFragment
+import com.example.myapplication.fragments.SignInFragment
+import com.example.myapplication.fragments.SignUpFragment
 
 
 class SignInSignupViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :

@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/loginSignUp"
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_bar"
+        app:menu="@menu/bottom_ber_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login-SignUp"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:itemIconTint="@color/text_color"
+        android:background="@color/grey_font"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
