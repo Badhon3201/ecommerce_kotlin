@@ -16,7 +16,7 @@ import com.example.myapplication.R
 class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d("Neww.................", "MMMMMMMMMMMMM")
+        Log.d("Neww.................", "MMMMMMMMMMMMM") 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

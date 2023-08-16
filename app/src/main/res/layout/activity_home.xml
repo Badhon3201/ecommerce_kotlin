@@ -18,8 +18,8 @@
         app:menu="@menu/bottom_ber_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconTint="@color/text_color"
-        android:background="@color/grey_font"
+        app:itemIconTint="@drawable/bottom_nav_colors"
+        android:background="@color/white"
         app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"/>
 

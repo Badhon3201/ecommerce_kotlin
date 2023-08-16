@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.denzcoskun.imageslider.ImageSlider
@@ -16,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        inflateFragment(HomeFragment.newInstance())
 
         val bottomBar = findViewById<BottomNavigationView>(R.id.bottom_bar)
 
